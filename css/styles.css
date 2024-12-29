@@ -1,19 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
 }
 
 header {
-    background: #35424a;
+    background: #6200ea;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     margin: 0;
+    font-size: 24px;
 }
 
 nav {
@@ -31,40 +33,66 @@ nav a:hover {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0; /* No margin */
+    padding: 0; /* No padding */
+    font-size: 16px;
+    line-height: 1; /* Reduced line-height */
+}
+
+select, input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#compatibility-text {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #35424a;
+    background: #6200ea;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-ul#file-structure {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul#file-structure li {
-    margin: 5px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button#generate-button {
-    display: block;
-    margin: 20px 0;
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #35424a;
+    background-color: #6200ea;
     color: #ffffff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button#generate-button:hover {
-    background-color: #2c3e50;
+    background-color: #3700b3;
 }

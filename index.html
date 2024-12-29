@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Structure Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>File Structure Generator</h1>
+        <h1>Datapack File Structure Generator</h1>
     </header>
     <main>
         <div class="container">
-            <h2>Select the items to include in your datapack:</h2>
+            <label for="version-select">Select Datapack Version:</label>
+            <select id="version-select">
+                <option value="61" selected>61 (current)</option>
+                <option value="57">57</option>
+                <option value="48">48</option>
+                <option value="41">41</option>
+                <option value="26">26</option>
+                <option value="18">18</option>
+                <option value="15">15</option>
+                <option value="12">12</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+            </select>
+            <div id="compatibility-text"></div>
+        </div>
+        <div class="container">
             <div id="file-structure">
                 <label><input type="checkbox"> folder1/</label><br>
                 <label><input type="checkbox"> folder2/</label><br>
@@ -27,6 +47,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
