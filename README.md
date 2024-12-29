@@ -10,7 +10,8 @@ minecraft-datapack-filestructure-generator
 ├── css
 │   └── styles.css   # Styles for the webpage
 ├── js
-│   └── scripts.js   # JavaScript for interactivity
+│   ├── main.js      # JavaScript for interactivity
+│   └── file-structure.js # JavaScript for file structure generation
 └── README.md        # Project documentation
 ```
 
@@ -26,7 +27,7 @@ To use the generator, follow these steps:
 
 ## Customization
 
-Feel free to modify the `styles.css` file to change the appearance of the webpage, or update `scripts.js` to add new features and interactivity.
+Feel free to modify the `styles.css` file to change the appearance of the webpage, or update the JavaScript files to add new features and interactivity.
 
 ## License
 
