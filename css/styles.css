@@ -2,11 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #7A5C34; /* Minecraft dirt color */
+    color: #ffffff;
 }
 
 header {
-    background: #6200ea;
+    background: #6B8E23; /* Minecraft grass color */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -18,45 +19,27 @@ h1 {
     font-size: 24px;
 }
 
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #5C4033; /* Darker brown color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 label {
-    display: block;
-    margin-bottom: 0; /* No margin */
-    padding: 0; /* No padding */
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0;
     font-size: 16px;
-    line-height: 1; /* Reduced line-height */
+    line-height: 1;
 }
 
 select, input[type="checkbox"] {
     margin-right: 10px;
+    font-size: 16px;
 }
 
 #compatibility-text {
@@ -71,7 +54,7 @@ select, input[type="checkbox"] {
 }
 
 footer {
-    background: #6200ea;
+    background: #2E2E2E; /* Minecraft bedrock color */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
