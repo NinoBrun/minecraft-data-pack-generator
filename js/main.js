@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCompatibilityText() {
         const defaultVersion = versionSelect.options[versionSelect.selectedIndex].value;
-        compatibilityText.innerHTML = `Datapack version <b>${defaultVersion}</b> is compatible with Minecraft version <b>${versionCompatibility[defaultVersion]}</b>`;
+        compatibilityText.innerHTML = `➡️ Version <b>${defaultVersion}</b> is compatible with Minecraft version <b>${versionCompatibility[defaultVersion]}</b>`;
 
         versionSelect.addEventListener('change', () => {
             const selectedVersion = versionSelect.value;
             const minecraftVersion = versionCompatibility[selectedVersion];
-            compatibilityText.innerHTML = `Datapack version <b>${selectedVersion}</b> is compatible with Minecraft version <b>${minecraftVersion}</b>`;
+            compatibilityText.innerHTML = `➡️ Version <b>${selectedVersion}</b> is compatible with Minecraft version <b>${minecraftVersion}</b>`;
         });
     }
 

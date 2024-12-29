@@ -2,12 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7A5C34; /* Minecraft dirt color */
+    background-color: #6A4B2F; /* Darker Minecraft dirt color */
     color: #ffffff;
 }
 
 header {
-    background: #6B8E23; /* Minecraft grass color */
+    background: #5A7A1B; /* Darker Minecraft grass color */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -24,17 +24,26 @@ h1 {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: #5C4033; /* Darker brown color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #4A2F1E; /* Darker brown color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Harder shadow */
     border-radius: 8px;
 }
 
-label {
+label[for="version-select"] {
     display: inline-block;
     margin-bottom: 10px;
     padding: 0;
     font-size: 16px;
     line-height: 1;
+    font-weight: bold;
+}
+
+#file-structure label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
 }
 
 select, input[type="checkbox"] {
@@ -42,13 +51,21 @@ select, input[type="checkbox"] {
     font-size: 16px;
 }
 
+select {
+    background-color: #3A2415; /* Darker matching brown color */
+    color: #ffffff; /* Text color */
+    border: 1px solid #2E1A10; /* Darker border */
+    border-radius: 4px;
+    padding: 5px;
+}
+
 #compatibility-text {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 10px;
     font-size: 16px;
-    color: #333;
-    background: #f5f5f5;
-    border: 1px solid #ddd;
+    color: #ffffff; /* Text color */
+    background: #3A2415; /* Darker matching brown color */
+    border: 1px solid #2E1A10; /* Darker border */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -81,7 +98,7 @@ footer a:hover {
 button#generate-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6200ea;
+    background-color: #2E8B57; /* Dark green color */
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -91,5 +108,5 @@ button#generate-button {
 }
 
 button#generate-button:hover {
-    background-color: #3700b3;
+    background-color: #276746; /* Darker green on hover */
 }
