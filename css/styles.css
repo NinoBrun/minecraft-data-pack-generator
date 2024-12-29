@@ -81,6 +81,20 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 button#generate-button {
     display: inline-block;
     padding: 10px 20px;
