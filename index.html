@@ -13,7 +13,13 @@
     </header>
     <main>
         <div class="container">
-            <label for="version-select">Datapack Version</label>
+            <label for="datapack-name">Name</label>
+            <input type="text" id="datapack-name" placeholder="Enter datapack name">
+                        
+            <label for="datapack-description">Description (optional)</label>
+            <textarea id="datapack-description" rows="4" placeholder="The default data for Minecraft"></textarea>
+
+            <label for="version-select">Version</label>
             <select id="version-select">
                 <option value="61" selected>61 (current)</option>
                 <option value="57">57</option>
@@ -31,6 +37,9 @@
                 <option value="5">5</option>
             </select>
             <div id="compatibility-text"></div>
+
+            <label for="datapack-photo">Photo (optional)</label>
+            <input type="file" id="datapack-photo" accept="image/*">
         </div>
         <div class="container">
             <div id="file-structure">
@@ -39,7 +48,7 @@
                 <label><input type="checkbox"> file1.txt</label><br>
                 <label><input type="checkbox"> file2.txt</label><br>
             </div>
-            <button id="generate-button">Generate</button>
+            <button id="generate-button">Generate Datapack</button>
         </div>
     </main>
     <footer>
@@ -50,6 +59,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="js/file-structure.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
