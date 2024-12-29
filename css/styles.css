@@ -142,3 +142,7 @@ button#generate-button {
 button#generate-button:hover {
     background-color: #276746;
 }
+
+.yellow-text {
+    color: #fdfd96; /* Yellow color */
+}

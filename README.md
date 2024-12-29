@@ -11,7 +11,8 @@ minecraft-datapack-filestructure-generator
 │   └── styles.css   # Styles for the webpage
 ├── js
 │   ├── main.js      # JavaScript for interactivity
-│   └── file-structure.js # JavaScript for file structure generation
+│   ├── fileStructure.js # JavaScript for file structure generation
+│   └── versionsList.js  # JavaScript for version compatibility
 └── README.md        # Project documentation
 ```
 

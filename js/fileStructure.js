@@ -21,3 +21,8 @@ function downloadZip(fileStructure) {
         saveAs(content, "datapack.zip");
     });
 }
+
+function generateDatapack() {
+  const fileStructure = generateFileStructure();
+  downloadZip(fileStructure);
+}
