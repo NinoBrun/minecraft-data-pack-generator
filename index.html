@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Structure Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>File Structure Generator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Select the items to include in your datapack:</h2>
+            <div id="file-structure">
+                <label><input type="checkbox"> folder1/</label><br>
+                <label><input type="checkbox"> folder2/</label><br>
+                <label><input type="checkbox"> file1.txt</label><br>
+                <label><input type="checkbox"> file2.txt</label><br>
+            </div>
+            <button id="generate-button">Generate</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Minecraft Datapack Filestructure Generator</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
