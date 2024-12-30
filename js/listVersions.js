@@ -31,11 +31,11 @@ function updateCompatibilityText() {
   const compatibilityText = document.getElementById('compatibility-text');
   const defaultVersion = versionSelect.options[versionSelect.selectedIndex].value;
   const versionInfo = versionData.find(v => v.value === defaultVersion);
-  compatibilityText.innerHTML = `➡️ Version <b class="yellow-text">${defaultVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
+  compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${defaultVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
 
   versionSelect.addEventListener('change', () => {
     const selectedVersion = versionSelect.value;
     const versionInfo = versionData.find(v => v.value === selectedVersion);
-    compatibilityText.innerHTML = `➡️ Version <b class="yellow-text">${selectedVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
+    compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${selectedVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
   });
 }
