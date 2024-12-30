@@ -45,7 +45,7 @@ label[for="datapack-photo"] {
 #datapack-description {
     width: calc(100% - 22px); /* Adjust width to match compatibility-text */
     padding: 10px;
-    margin: 4px 0 10px 0;
+    margin: 0 0 16px 0;
     font-size: 16px;
     border: 1px solid #2E1A10;
     border-radius: 4px;
@@ -60,8 +60,7 @@ label[for="datapack-photo"] {
 #datapack-photo {
     width: calc(100% - 22px); /* Adjust width to match compatibility-text */
     padding: 10px;
-    margin: 4px 0 0 0;
-    margin-bottom: 10px;
+    margin: 0 0 16px 0;
     font-size: 16px;
     border: 1px solid #2E1A10;
     border-radius: 4px;
@@ -70,15 +69,14 @@ label[for="datapack-photo"] {
 }
 
 #file-structure label {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 0;
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    line-height: 1;
+    line-height: 2;
 }
 
 select, input[type="checkbox"] {
-    margin-right: 16px;
+    margin-right: 12px;
     font-size: 16px;
 }
 
@@ -91,7 +89,7 @@ select {
 }
 
 #compatibility-text {
-    margin: 4px 0 10px 0;
+    margin: 0 0 16px 0;
     padding: 10px;
     font-size: 16px;
     color: #ffffff;
@@ -150,19 +148,22 @@ button#generate-button:hover {
 .info-btn {
     background-color: #222222; /* Dark blue color */
     color: #ffffff;
-    border: 1px solid #1a1a1a; /* Black outline */
+    border: 1px solid #111111; /* Black outline */
     border-radius: 50%;
     cursor: pointer;
-    font-size: 12px;
-    margin-left: 4px;
-    padding: 4px 8px;
+    font-size: 10px;
+    margin-left: 8px;
+    padding: 2px 6px;
     text-align: center;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-text {
     display: none;
-    margin-top: 5px;
+    margin: 0 0 16px 0;
     padding: 10px;
     background-color: #3A2415;
     border: 1px solid #2E1A10;
