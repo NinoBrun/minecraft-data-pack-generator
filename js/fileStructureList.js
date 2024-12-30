@@ -41,3 +41,25 @@ const fileStructureInfo = [
   { title: "flat_level_generator_preset", info: "TODO" },
   { title: "multi_noise_biome_source_parameter_list", info: "TODO" }
 ];
+
+function generateFileStructureHTML() {
+  const fileStructureDiv = document.getElementById('file-structure');
+  fileStructureInfo.forEach(item => {
+      const label = document.createElement('label');
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      label.appendChild(checkbox);
+      label.appendChild(document.createTextNode(` ${item.title} `));
+      const infoButton = document.createElement('button');
+      infoButton.className = 'info-btn';
+      infoButton.textContent = 'i';
+      infoButton.onclick = () => toggleInfo(infoButton);
+      label.appendChild(infoButton);
+      const infoText = document.createElement('div');
+      infoText.className = 'info-text';
+      infoText.textContent = item.info;
+      fileStructureDiv.appendChild(label);
+      fileStructureDiv.appendChild(infoText);
+      fileStructureDiv.appendChild(document.createElement('br'));
+  });
+}
