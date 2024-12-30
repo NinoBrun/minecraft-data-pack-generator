@@ -14,13 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     updateCompatibilityText();
+    generateFileStructureHTML();
 });
-
-function toggleInfo(button) {
-    const infoText = button.nextElementSibling;
-    if (infoText.style.display === "none" || infoText.style.display === "") {
-        infoText.style.display = "block";
-    } else {
-        infoText.style.display = "none";
-    }
-}
