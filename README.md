@@ -12,7 +12,9 @@ minecraft-datapack-filestructure-generator
 ├── js
 │   ├── main.js      # JavaScript for interactivity
 │   ├── fileStructure.js # JavaScript for file structure generation
-│   └── versionsList.js  # JavaScript for version compatibility
+│   ├── listFiles.js # JavaScript for file structure information
+│   ├── listVersions.js  # JavaScript for version compatibility
+│   └── toggleInfo.js    # JavaScript for toggling info text
 └── README.md        # Project documentation
 ```
 
@@ -28,7 +30,18 @@ To use the generator, follow these steps:
 
 ## Customization
 
-Feel free to modify the `styles.css` file to change the appearance of the webpage, or update the JavaScript files to add new features and interactivity.
+### Styles
+
+Feel free to modify the `styles.css` file to change the appearance of the webpage.
+
+### JavaScript
+
+You can update the JavaScript files to add new features and interactivity. Here are some key files:
+
+- `listFiles.js`: Contains the file structure information. You can add or modify the items in the `fileStructureInfo` array.
+- `listVersions.js`: Contains the version compatibility information. You can add or modify the items in the `versionData` array.
+- `toggleInfo.js`: Contains the function to toggle the display of the info text.
+- `main.js`: Initializes the page by populating the version select dropdown, updating the compatibility text, and generating the file structure HTML.
 
 ## License
 
