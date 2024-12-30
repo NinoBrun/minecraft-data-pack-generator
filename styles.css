@@ -146,3 +146,26 @@ button#generate-button:hover {
 .yellow-text {
     color: #fdfd96; /* Yellow color */
 }
+
+.info-btn {
+    background-color: #222222; /* Dark blue color */
+    color: #ffffff;
+    border: 1px solid #1a1a1a; /* Black outline */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 4px;
+    padding: 4px 8px;
+    text-align: center;
+    line-height: 1;
+}
+
+.info-text {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #3A2415;
+    border: 1px solid #2E1A10;
+    border-radius: 4px;
+    color: #ffffff;
+}
