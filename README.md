@@ -14,7 +14,9 @@ minecraft-datapack-filestructure-generator
 │   ├── fileStructure.js # JavaScript for file structure generation
 │   ├── listFiles.js # JavaScript for file structure information
 │   ├── listVersions.js  # JavaScript for version compatibility
-│   └── toggleInfo.js    # JavaScript for toggling info text
+│   ├── toggleInfo.js    # JavaScript for toggling info text
+│   ├── listFilesObject.js # JavaScript for file structure object
+│   └── listVersionsObject.js # JavaScript for version compatibility object
 └── README.md        # Project documentation
 ```
 
@@ -27,6 +29,13 @@ To use the generator, follow these steps:
 3. You should see the webpage with the Minecraft datapack folder structure.
 4. Check or uncheck the items you want in your datapack.
 5. Click the generate button to download the file structure as a zip file.
+
+## Features
+
+- **Dynamic File Structure**: The file structure is dynamically generated based on the `fileStructureInfo` array in `listFiles.js`.
+- **Version Compatibility**: The version compatibility information is dynamically generated based on the `versionData` array in `listVersions.js`.
+- **Info Toggle**: Each item in the file structure has an info button that toggles the display of additional information.
+- **Validation**: The datapack name input field only allows characters compatible with folder naming in Windows and disallows spaces. A warning blurb appears if invalid characters are entered.
 
 ## Customization
 
