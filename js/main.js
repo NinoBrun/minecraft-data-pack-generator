@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     populateVersionSelect();
     updateVersionCompatibilityText();
     populateFileStrucutre();
-
     // Active listeners (see updateInfo.js)
     addEventListeners();
 });

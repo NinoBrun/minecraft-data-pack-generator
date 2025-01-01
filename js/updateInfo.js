@@ -2,7 +2,7 @@ function addEventListeners() {
   const datapackNameInput = document.getElementById('datapack-name');
   const datapackDescriptionInput = document.getElementById('datapack-description');
   const versionSelect = document.getElementById('version-select');
-
+  
   datapackNameInput.addEventListener('input', validateDataPackName);
   datapackNameInput.addEventListener('input', updateDataPackName);
   datapackDescriptionInput.addEventListener('input', validateDataPackDescription);
@@ -13,10 +13,6 @@ function addEventListeners() {
 function updateVersionCompatibilityText() {
   const versionSelect = document.getElementById('version-select');
   const compatibilityText = document.getElementById('compatibility-text');
-  const defaultVersion = versionSelect.options[versionSelect.selectedIndex].value;
-  const versionInfo = versionData.find(v => v.value === defaultVersion);
-  compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${defaultVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
-
   versionSelect.addEventListener('change', () => {
     const selectedVersion = versionSelect.value;
     const versionInfo = versionData.find(v => v.value === selectedVersion);
