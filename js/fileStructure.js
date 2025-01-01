@@ -24,7 +24,7 @@ function downloadZip(fileStructure) {
         }
     });
     zip.generateAsync({ type: "blob" }).then(content => {
-        saveAs(content, "datapack.zip");
+        saveAs(content, "yourDatapack.zip");
     });
 }
 
