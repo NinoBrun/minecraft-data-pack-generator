@@ -1,8 +1,13 @@
 const fileStructureInfo = [
-  { title: "data pack name", fileType: "folder", showCheckbox: false, showInfoButton: false,
+  { title: "Enter datapack name", fileType: "folder", showCheckbox: false, showInfoButton: false,
     info: "TODO" },
   { title: "pack.mcmeta", fileType: "file", showCheckbox: false, showInfoButton: true,
-    info: "TODO" },
+    info: `{
+              "pack": {
+                  "description": "The default data for Minecraft",
+                  "pack_format": 61
+              }
+          }` },
   { title: "pack.png", fileType: "file", showCheckbox: false, showInfoButton: false,
     info: "TODO" },
   { title: "data", fileType: "folder", showCheckbox: true, showInfoButton: true,
@@ -112,4 +117,10 @@ function generateFileStructureHTML() {
       fileStructureDiv.appendChild(label);
       fileStructureDiv.appendChild(infoText);
   });
+}
+
+function updateDataPackName() {
+  const dataPackName = document.getElementById('datapack-name').value || "data pack name";
+  fileStructureInfo[0].title = dataPackName;
+  generateFileStructureHTML();
 }

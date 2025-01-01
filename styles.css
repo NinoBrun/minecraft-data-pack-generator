@@ -170,3 +170,10 @@ button#generate-button:hover {
     border-radius: 4px;
     color: #ffffff;
 }
+
+.warning-blurb {
+    display: none;
+    color: #fdfd96;
+    font-size: 14px;
+    margin-top: 5px;
+}

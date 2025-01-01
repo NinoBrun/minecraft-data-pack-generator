@@ -1,8 +1,14 @@
 function generateFileStructure() {
     const fileStructure = [];
-    document.querySelectorAll('#file-structure input[type="checkbox"]').forEach(checkbox => {
-        if (checkbox.checked) {
-            fileStructure.push(checkbox.parentElement.textContent.trim());
+    fileStructureInfo.forEach(item => {
+        if (item.showCheckbox) {
+            document.querySelectorAll('#file-structure input[type="checkbox"]').forEach(checkbox => {
+                if (checkbox.checked && checkbox.parentElement.textContent.trim().includes(item.title)) {
+                    fileStructure.push(checkbox.parentElement.textContent.trim());
+                }
+            });
+        } else {
+            fileStructure.push(item.title);
         }
     });
     return fileStructure;
