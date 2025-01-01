@@ -2,12 +2,7 @@ const fileStructureInfo = [
   { title: "Enter datapack name", fileType: "folder", showCheckbox: false, showInfo: false, showInfoButton: false, fileLevel: 0,
     info: "TODO" },
   { title: "pack.mcmeta", fileType: "file", showCheckbox: false, showInfo: true, showInfoButton: false, fileLevel: 1,
-    info: `{
-              "pack": {
-                  "description": "The default data for Minecraft",
-                  "pack_format": 61
-              }
-          }` },
+    info: `{ "pack": { "description": "The default data for Minecraft", "pack_format": 61 } }` },
   { title: "pack.png", fileType: "file", showCheckbox: false, showInfo: false, showInfoButton: false, fileLevel: 1,
     info: "TODO" },
   { title: "data", fileType: "folder", showCheckbox: true, showInfo: false, showInfoButton: true, fileLevel: 1,
