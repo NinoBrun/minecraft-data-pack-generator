@@ -120,7 +120,7 @@ function generateFileStructureHTML() {
 }
 
 function updateDataPackName() {
-  const dataPackName = document.getElementById('datapack-name').value || "data pack name";
+  const dataPackName = document.getElementById('datapack-name').value || "Enter datapack name";
   fileStructureInfo[0].title = dataPackName;
   generateFileStructureHTML();
 }
