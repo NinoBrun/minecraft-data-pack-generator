@@ -15,3 +15,13 @@ const versionData = [
   { value: "5", text: "5", compatibility: "1.15, 1.15.1, 1.15.2, 1.16 & 1.16.1" },
   { value: "4", text: "4", compatibility: "1.13, 1.13.1, 1.13.2, 1.14, 1.14.1, 1.14.2, 1.14.3 & 1.14.4" }
 ];
+
+function populateVersionSelect() {
+  const versionSelect = document.getElementById('version-select');
+  versionData.forEach(option => {
+    const opt = document.createElement('option');
+    opt.value = option.value;
+    opt.textContent = option.text;
+    versionSelect.appendChild(opt);
+  });
+}
