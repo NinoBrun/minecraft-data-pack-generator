@@ -24,6 +24,9 @@ function generateFileStructureHTML() {
       const infoText = document.createElement('div');
       infoText.className = 'info-text';
       infoText.textContent = item.info;
+      if (item.showInfo) {
+          infoText.style.display = 'block';
+      }
       fileStructureDiv.appendChild(label);
       fileStructureDiv.appendChild(infoText);
   });
