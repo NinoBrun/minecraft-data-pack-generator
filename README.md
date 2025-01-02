@@ -7,8 +7,7 @@ This project helps generate the file structure for Minecraft datapacks. It allow
 ```
 minecraft-datapack-filestructure-generator
 ├── index.html       # Main HTML document
-├── css
-│   └── styles.css   # Styles for the webpage
+├── styles.css   # Styles for the webpage
 ├── js
 │   ├── main.js      # JavaScript for interactivity
 │   ├── fileStructure.js # JavaScript for file structure generation
@@ -20,6 +19,8 @@ minecraft-datapack-filestructure-generator
 │   ├── populateLists.js # JavaScript for populating lists
 │   ├── validateInfo.js # JavaScript for validating input fields
 │   └── updateInfo.js # JavaScript for updating info fields
+├── media
+│   └── mc.webp
 └── README.md        # Project documentation
 ```
 
