@@ -12,6 +12,7 @@ function generateDatapack() {
   const zip = new JSZip();
   const datapackName = document.getElementById('datapack-name').value || 'yourDatapack';
   const rootFolder = zip.folder(datapackName);
+  const packPngFile = document.getElementById('datapack-photo').files[0];
 
   fileStructureInfo.forEach((item, index) => {
     const label = document.querySelectorAll('#file-structure label')[index];
@@ -21,7 +22,13 @@ function generateDatapack() {
       if (item.fileType === 'folder') {
         rootFolder.folder(path);
       } else if (item.fileType === 'file') {
-        rootFolder.file(path, item.info || '');
+        if (item.title === 'pack.png' && packPngFile) {
+          rootFolder.file(path, packPngFile);
+        } else if (item.title === 'pack.mcmeta') {
+          rootFolder.file(path, item.info || '');
+        } else if (item.title !== 'pack.png') {
+          rootFolder.file(path, item.info || '');
+        }
       }
     }
   });
