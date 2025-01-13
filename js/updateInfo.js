@@ -25,12 +25,12 @@ function updateDataPackName() {
   const dataPackNamespace = document.getElementById('datapack-name').value || "namespace";
   fileStructureInfo[0].title = dataPackName;
   fileStructureInfo[4].title = dataPackNamespace;
-  populateFileStrucutre();
+  populateFileStructure();
 }
 
 function updatePackMcmeta() {
   const description = document.getElementById('datapack-description').value || "The default data for Minecraft";
   const packFormat = document.getElementById('version-select').value || "61";
   fileStructureInfo[1].info = `{ "pack": { "description": "${description}", "pack_format": ${packFormat} } }`;
-  populateFileStrucutre();
+  populateFileStructure();
 }

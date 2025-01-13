@@ -13,11 +13,12 @@ function populateVersionSelect() {
   compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${defaultVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
 }
 
-function populateFileStrucutre() {
+function populateFileStructure() {
   const fileStructureDiv = document.getElementById('file-structure');
   fileStructureDiv.innerHTML = ''; // Clear existing content
   fileStructureInfo.forEach(item => {
       const label = document.createElement('label');
+      label.style.paddingLeft = `${item.fileLevel * 16}px`;
       if (item.showCheckbox) {
           const checkbox = document.createElement('input');
           checkbox.type = 'checkbox';
