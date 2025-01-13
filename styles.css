@@ -76,7 +76,7 @@ label[for="datapack-photo"] {
 }
 
 select, input[type="checkbox"] {
-    margin-right: 9px;
+    margin: 0 9px 0 2px;
     font-size: 16px;
 }
 
