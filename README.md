@@ -59,9 +59,29 @@ You can update the JavaScript files to add new features and interactivity. Here 
 - `validateInfo.js`: Contains functions to validate the input fields.
 - `updateInfo.js`: Contains functions to update the info fields.
 
+## Dependencies
+
+This project uses the following libraries:
+
+- [JSZip](https://stuk.github.io/jszip/) for generating zip files.
+- [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for saving files on the client side.
+
+Make sure to include these libraries in your project if you plan to modify or extend the functionality.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. When contributing, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
 ## License
 
-This project is open-source and available for anyone to use and modify.
+This project is open-source and available under the MIT License. See the `LICENSE` file for more details.
 
 ## Resources
 
