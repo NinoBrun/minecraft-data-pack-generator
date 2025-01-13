@@ -18,7 +18,7 @@ function populateFileStructure() {
   fileStructureDiv.innerHTML = ''; // Clear existing content
   fileStructureInfo.forEach(item => {
       const label = document.createElement('label');
-      label.style.paddingLeft = `${item.fileLevel * 16}px`;
+      label.style.paddingLeft = `${item.fileLevel * 27}px`;
       if (item.showCheckbox) {
           const checkbox = document.createElement('input');
           checkbox.type = 'checkbox';
