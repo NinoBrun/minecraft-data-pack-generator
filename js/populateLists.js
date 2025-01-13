@@ -18,7 +18,7 @@ function populateFileStructure() {
   fileStructureDiv.innerHTML = ''; // Clear existing content
   fileStructureInfo.forEach(item => {
       const label = document.createElement('label');
-      label.style.paddingLeft = `${item.fileLevel * 27}px`;
+      label.style.paddingLeft = `${item.fileLevel * 24}px`;
       if (item.showCheckbox) {
           const checkbox = document.createElement('input');
           checkbox.type = 'checkbox';
@@ -39,6 +39,7 @@ function populateFileStructure() {
       }
       const infoText = document.createElement('div');
       infoText.className = 'info-text';
+      infoText.style.marginLeft = label.style.paddingLeft;
       infoText.textContent = item.info;
       if (item.showInfo) {
           infoText.style.display = 'block';

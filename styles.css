@@ -21,7 +21,7 @@ h1 {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #4A2F1E;
@@ -76,7 +76,7 @@ label[for="datapack-photo"] {
 }
 
 select, input[type="checkbox"] {
-    margin-right: 12px;
+    margin-right: 9px;
     font-size: 16px;
 }
 
@@ -163,7 +163,7 @@ button#generate-button:hover {
 
 .info-text {
     display: none;
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
     padding: 10px;
     background-color: #3A2415;
     border: 1px solid #2E1A10;
