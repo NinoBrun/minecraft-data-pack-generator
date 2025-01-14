@@ -7,10 +7,7 @@ function populateVersionSelect() {
     opt.textContent = option.value === highestVersion.toString() ? `${option.value} (current)` : option.value;
     versionSelect.appendChild(opt);
   });
-  const compatibilityText = document.getElementById('compatibility-text');
-  const defaultVersion = versionSelect.options[versionSelect.selectedIndex].value;
-  const versionInfo = versionData.find(v => v.value === defaultVersion);
-  compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${defaultVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
+  updateVersionCompatibilityText();
 }
 
 function populateFileStructure() {
@@ -50,23 +47,6 @@ function populateFileStructure() {
     if (!item.showItem) {
       label.style.display = 'none';
       infoText.style.display = 'none';
-    }
-  });
-}
-
-function toggleChildrenVisibility(parentIndex, isVisible) {
-  fileStructureInfo.forEach((item, index) => {
-    if (item.parentIndex === parentIndex) {
-      const label = document.querySelectorAll('#file-structure label')[index];
-      label.style.display = isVisible ? 'flex' : 'none';
-      const checkbox = label.querySelector('input[type="checkbox"]');
-      checkbox.checked = !isVisible;
-      checkbox.checked = false;
-      const infoText = document.querySelectorAll('#file-structure .info-text')[index];
-      infoText.style.display = 'none';
-      if (!isVisible) {
-        toggleChildrenVisibility(index, false);
-      }
     }
   });
 }

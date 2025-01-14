@@ -12,22 +12,22 @@ function generateDatapack() {
   const zip = new JSZip();
   const datapackName = document.getElementById('datapack-name').value || 'yourDatapack';
   const rootFolder = zip.folder(datapackName);
-  const packPngFile = document.getElementById('datapack-photo').files[0];
+  const packPngFile = document.getElementById('datapack-photo').files[0] || '';
 
   fileStructureInfo.forEach((item, index) => {
     const label = document.querySelectorAll('#file-structure label')[index];
     const checkbox = label.querySelector('input[type="checkbox"]');
-    if ((checkbox && checkbox.checked) || !item.showCheckbox) {
+    const isChecked = checkbox && checkbox.checked;
+    const shouldInclude = isChecked || !item.showCheckbox;
+
+    if (shouldInclude) {
       const path = getPath(index);
       if (item.fileType === 'folder') {
         rootFolder.folder(path);
       } else if (item.fileType === 'file') {
-        if (item.title === 'pack.png' && packPngFile) {
-          rootFolder.file(path, packPngFile);
-        } else if (item.title === 'pack.mcmeta') {
-          rootFolder.file(path, item.info || '');
-        } else if (item.title !== 'pack.png') {
-          rootFolder.file(path, item.info || '');
+        const fileContent = item.title == 'pack.png' ? packPngFile : item.info;
+        if(fileContent) {
+          rootFolder.file(path, fileContent);
         }
       }
     }
