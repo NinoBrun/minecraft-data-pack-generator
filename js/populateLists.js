@@ -61,6 +61,7 @@ function toggleChildrenVisibility(parentIndex, isVisible) {
       label.style.display = isVisible ? 'flex' : 'none';
       const checkbox = label.querySelector('input[type="checkbox"]');
       checkbox.checked = !isVisible;
+      checkbox.checked = false;
       const infoText = document.querySelectorAll('#file-structure .info-text')[index];
       infoText.style.display = 'none';
       if (!isVisible) {

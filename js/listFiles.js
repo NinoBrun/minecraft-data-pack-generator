@@ -1,5 +1,5 @@
 const fileStructureInfo = [
-  { title: "Enter datapack name", fileType: "folder", fileLevel: 0, parentIndex: 0,
+  { title: "Enter datapack name", fileType: "folder", fileLevel: 0, parentIndex: null,
     showItem: true, showCheckbox: false, showInfo: false, showInfoButton: false,
     info: "TODO" },
   { title: "pack.mcmeta", fileType: "file", fileLevel: 1, parentIndex: 0,
