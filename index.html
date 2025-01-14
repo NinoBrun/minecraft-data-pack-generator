@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Structure Generator</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="media/mc.webp" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datapack Structure Generator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="media/mc.webp" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <h1>Datapack File Structure Generator</h1>
-    </header>
-    <main>
-        <div class="container">
-            <label for="datapack-name">Name</label>
-            <input type="text" id="datapack-name" placeholder="Enter datapack name">
-            <div id="name-warning" class="warning-blurb">
-                Only alphanumeric characters, hyphens, and underscores are allowed
-            </div>
-                        
-            <label for="datapack-description">Description (optional)</label>
-            <textarea id="datapack-description" rows="4" placeholder="The default data for Minecraft"></textarea>
-            <div id="description-warning" class="warning-blurb">
-                Double quotes and backslashes are not allowed
-            </div>
+  <header>
+    <h1>Datapack File Structure Generator</h1>
+  </header>
+  <main>
+    <div class="container">
+      <label for="datapack-name">Name</label>
+      <input type="text" id="datapack-name" placeholder="Enter datapack name">
+      <div id="name-warning" class="warning-blurb">
+        Only alphanumeric characters, hyphens, and underscores are allowed
+      </div>
+                    
+      <label for="datapack-description">Description (optional)</label>
+      <textarea id="datapack-description" rows="4" placeholder="The default data for Minecraft"></textarea>
+      <div id="description-warning" class="warning-blurb">
+        Double quotes and backslashes are not allowed
+      </div>
 
-            <label for="version-select">Version</label>
-            <select id="version-select"></select>
-            <div id="compatibility-text"></div>
+      <label for="version-select">Version</label>
+      <select id="version-select"></select>
+      <div id="compatibility-text"></div>
 
-            <label for="datapack-photo">Photo (optional)</label>
-            <input type="file" id="datapack-photo" accept="image/*">
-        </div>
-        <div class="container">
-            <div id="file-structure"></div>
-            <button id="generate-button" onclick="generateDatapack()">Generate Datapack Structure</button>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Minecraft Datapack File Structure Generator</p>
-        <p>
-            <a href="https://github.com/NinoBrun/minecraft-datapack-filestructure-generator.git" target="_blank">GitHub Repository</a>
-        </p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/listVersions.js"></script>
-    <script src="js/listFiles.js"></script>
-    <script src="js/populateLists.js"></script>
-    <script src="js/toggleInfo.js"></script>
-    <script src="js/validateInfo.js"></script>
-    <script src="js/updateInfo.js"></script>
-    <script src="js/fileStructure.js"></script>
+      <label for="datapack-photo">Photo (optional)</label>
+      <input type="file" id="datapack-photo" accept="image/*">
+    </div>
+
+    <div class="container">
+      <div id="file-structure"></div>
+      <button id="generate-button" onclick="generateDatapack()">Generate Datapack Structure</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Minecraft Datapack File Structure Generator</p>
+    <p><a href="https://github.com/NinoBrun/minecraft-datapack-filestructure-generator.git" target="_blank">GitHub Repository</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/listVersions.js"></script>
+  <script src="js/listFiles.js"></script>
+  <script src="js/populateLists.js"></script>
+  <script src="js/toggleInfo.js"></script>
+  <script src="js/validateInfo.js"></script>
+  <script src="js/updateInfo.js"></script>
+  <script src="js/fileStructure.js"></script>
 </body>
 </html>
