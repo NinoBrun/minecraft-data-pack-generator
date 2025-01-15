@@ -65,6 +65,17 @@
         .yellow-text {
           color: #fdfd96;
         }
+        select {
+          background-color: #3A2415;
+          color: #ffffff;
+          border: 1px solid #2E1A10;
+          border-radius: 4px;
+          padding: 5px;
+        }
+        select, #file-structure label input[type="checkbox"] {
+          margin: 0 9px 0 2px;
+          font-size: 16px;
+        }
       #file-structure label {
         display: flex;
         align-items: center;
@@ -73,10 +84,6 @@
         white-space: normal;
         word-break: break-all;
       }
-        #file-structure label input[type="checkbox"] {
-          margin: 0 9px 0 2px;
-          font-size: 16px;
-        }
       .info-btn {
         background-color: #222222;
         color: #ffffff;
