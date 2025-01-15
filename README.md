@@ -8,20 +8,18 @@ This project helps generate the file structure for Minecraft data packs. It allo
 minecraft-datapack-filestructure-generator
 ├── index.html       # Main HTML document
 ├── styles.css       # Styles for the webpage
-├── js
-│   ├── main.js               # JavaScript for interactivity
-│   ├── fileStructure.js      # JavaScript for file structure generation
-│   ├── listFiles.js          # JavaScript for file structure information
-│   ├── listVersions.js       # JavaScript for version compatibility
-│   ├── toggleInfo.js         # JavaScript for toggling info text
-│   ├── listFilesObject.js    # JavaScript for file structure object
-│   ├── listVersionsObject.js # JavaScript for version compatibility object
-│   ├── populateLists.js      # JavaScript for populating lists
-│   ├── validateInfo.js       # JavaScript for validating input fields
-│   └── updateInfo.js         # JavaScript for updating info fields
-├── media
-│   └── mc.webp
-└── README.md        # Project documentation
+└── js
+    ├── main.js               # JavaScript for interactivity
+    ├── fileStructure.js      # JavaScript for file structure generation
+    ├── listFiles.js          # JavaScript for file structure information
+    ├── listVersions.js       # JavaScript for version compatibility
+    ├── toggleInfo.js         # JavaScript for toggling info text
+    ├── listFilesObject.js    # JavaScript for file structure object
+    ├── listVersionsObject.js # JavaScript for version compatibility object
+    ├── populateLists.js      # JavaScript for populating lists
+    ├── validateInfo.js       # JavaScript for validating input fields
+    ├── updateInfo.js         # JavaScript for updating info fields
+    └── toggleFaq.js          # JavaScript for toggling FAQ sections
 ```
 
 ## Getting Started
@@ -40,6 +38,7 @@ To use the generator, follow these steps:
 - **Version Compatibility**: The version compatibility information is dynamically generated based on the `versionData` array in `listVersionsObject.js`.
 - **Info Toggle**: Each item in the file structure has an info button that toggles the display of additional information.
 - **Validation**: The data pack name input field only allows characters compatible with folder naming in Windows and disallows spaces. A warning blurb appears if invalid characters are entered.
+- **FAQ Sections**: Clickable FAQ sections that expand to show more information.
 
 ## Customization
 
@@ -65,8 +64,6 @@ This project uses the following libraries:
 
 - [JSZip](https://stuk.github.io/jszip/) for generating zip files.
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for saving files on the client side.
-
-Make sure to include these libraries in your project if you plan to modify or extend the functionality.
 
 ## Contributing
 
