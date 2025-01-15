@@ -32,7 +32,8 @@
       label[for="datapack-name"],
       label[for="version-select"],
       label[for="datapack-description"],
-      label[for="datapack-photo"] {
+      label[for="datapack-photo"],
+      .faq-title {
         display: inline-block;
         margin: 10px 0;
         padding: 0;
@@ -40,10 +41,18 @@
         line-height: 1;
         font-weight: bold;
       }
+      select,
+      #datapack-photo,
+      #file-structure label input[type="checkbox"],
+      .info-btn,
+      .dropdown-arrow {
+        cursor: pointer;
+      }
       #datapack-name,
       #datapack-description,
       #compatibility-text,
-      #datapack-photo {
+      #datapack-photo,
+      .faq-description {
         width: 100%;
         padding: 10px;
         margin: 0 0 16px 0;
@@ -125,6 +134,22 @@
         button#generate-button:hover {
           background-color: #276746;
         }
+      .dropdown-arrow {
+        font-size: 12px;
+        margin: 0 0 0 2px;
+        vertical-align: middle;
+        color: #fdfd96;
+      }
+      .faq-description {
+        display: none;
+      }
+        .faq-description a {
+          color: #fdfd96;
+          text-decoration: none;
+        }
+          .faq-description a:hover {
+            text-decoration: underline;
+          }
     footer {
       background: #2E2E2E;
       color: #ffffff;
@@ -152,12 +177,13 @@
 @media (max-width: 600px) {
   .container {
     padding: 12px;
-    width: 100%;
+    width: 99%;
   }
     #datapack-name,
     #datapack-description,
     #compatibility-text,
-    #datapack-photo {
+    #datapack-photo,
+    .faq-description {
       font-size: 14px;
     }
       .warning-blurb {

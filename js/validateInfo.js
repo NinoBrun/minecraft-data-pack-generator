@@ -16,14 +16,14 @@ function validateInput(inputId, warningId, regex) {
 }
 
 /**
- * Validate datapack name to ensure it contains only alphanumeric characters, hyphens, and underscores.
+ * Validate data pack name to ensure it contains only alphanumeric characters, hyphens, and underscores.
  */
 function validateDataPackName() {
   validateInput('datapack-name', 'name-warning', /[^a-zA-Z0-9-_]/g);
 }
 
 /**
- * Validate datapack description to ensure it does not contain double quotes and backslashes.
+ * Validate data pack description to ensure it does not contain double quotes and backslashes.
  */
 function validateDataPackDescription() {
   validateInput('datapack-description', 'description-warning', /["\\]/g);

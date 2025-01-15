@@ -34,3 +34,16 @@ function toggleChildrenVisibility(parentIndex, isVisible) {
     }
   });
 }
+
+/**
+ * Toggles visibility of the FAQ description.
+ * @param {HTMLElement} element - FAQ title element
+ */
+function toggleFaq(element) {
+  const description = element.nextElementSibling;
+  const arrow = element.querySelector('.dropdown-arrow');
+  const isVisible = description.style.display === 'block';
+  // Toggle display
+  description.style.display = isVisible ? 'none' : 'block';
+  arrow.textContent = isVisible ? '▼' : '▲';
+}

@@ -1,6 +1,6 @@
-# Minecraft Datapack Filestructure Generator
+# Minecraft Data Pack Filestructure Generator
 
-This project helps generate the file structure for Minecraft datapacks. It allows you to check and uncheck each item in the structure individually and generate a downloadable zip file of the selected structure.
+This project helps generate the file structure for Minecraft data packs. It allows you to check and uncheck each item in the structure individually and generate a downloadable zip file of the selected structure.
 
 ## Project Structure
 
@@ -30,8 +30,8 @@ To use the generator, follow these steps:
 
 1. Clone the repository or download the project files.
 2. Open the `index.html` file in your web browser.
-3. You should see the webpage with the Minecraft datapack folder structure.
-4. Check or uncheck the items you want in your datapack.
+3. You should see the webpage with the Minecraft data pack folder structure.
+4. Check or uncheck the items you want in your data pack.
 5. Click the generate button to download the file structure as a zip file.
 
 ## Features
@@ -39,7 +39,7 @@ To use the generator, follow these steps:
 - **Dynamic File Structure**: The file structure is dynamically generated based on the `fileStructureInfo` array in `listFilesObject.js`.
 - **Version Compatibility**: The version compatibility information is dynamically generated based on the `versionData` array in `listVersionsObject.js`.
 - **Info Toggle**: Each item in the file structure has an info button that toggles the display of additional information.
-- **Validation**: The datapack name input field only allows characters compatible with folder naming in Windows and disallows spaces. A warning blurb appears if invalid characters are entered.
+- **Validation**: The data pack name input field only allows characters compatible with folder naming in Windows and disallows spaces. A warning blurb appears if invalid characters are entered.
 
 ## Customization
 
@@ -78,11 +78,3 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 4. Commit your changes (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
-
-## License
-
-This project is open-source and available under the MIT License. See the `LICENSE` file for more details.
-
-## Resources
-
-1. [Minecraft Wiki - Data pack Folder structure](https://minecraft.wiki/w/Data_pack#Folder_structure)

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Easily generate a Minecraft datapack file structure.">
-  <title>Datapack Structure Generator</title>
+  <meta name="description" content="Easily generate a Minecraft data pack file structure.">
+  <title>Data Pack Structure Generator</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="media/mc.webp" type="image/x-icon">
@@ -12,48 +12,68 @@
 
 <body>
   <header>
-    <h1>Datapack File Structure Generator</h1>
+    <h1>Data Pack File Structure Generator</h1>
   </header>
   <main>
     <div class="container">
       <label for="datapack-name">Name</label>
-      <input type="text" id="datapack-name" placeholder="Enter datapack name" aria-describedby="name-warning">
+      <input type="text" id="datapack-name" placeholder="Enter data pack name" aria-describedby="name-warning">
       <div id="name-warning" class="warning-blurb">
         Only alphanumeric characters, hyphens, and underscores are allowed
       </div>
-                    
       <label for="datapack-description">Description (optional)</label>
       <textarea id="datapack-description" rows="4" placeholder="The default data for Minecraft" aria-describedby="description-warning"></textarea>
       <div id="description-warning" class="warning-blurb">
         Double quotes and backslashes are not allowed
       </div>
-
       <label for="version-select">Version</label>
       <select id="version-select" aria-label="Select version"></select>
       <div id="compatibility-text"></div>
-
       <label for="datapack-photo">Photo (optional)</label>
       <input type="file" id="datapack-photo" accept="image/*">
     </div>
 
     <div class="container">
       <div id="file-structure"></div>
-      <button id="generate-button" onclick="generateDatapack()">Generate Datapack Structure</button>
+      <button id="generate-button" onclick="generateDatapack()">Generate Data Pack Structure</button>
     </div>
 
     <div class="container">
       <div id="instructions">
-        <h2>Where do I place my datapack folder?</h2>
+        <label for="instructions-description" class="faq-title" id="instructions-title" onclick="toggleFaq(this)">
+          Where do I place my data pack folder? <span class="dropdown-arrow">▼</span>
+        </label>
+        <div class="faq-description" id="instructions-description">
+          • Find and open your .minecraft folder on your PC<br>
+          • Go to the "saves" folder<br>
+          • Open the folder of the world you want to add the data pack to<br>
+          • Go to the "datapacks" folder<br>
+          • Place your data pack in the "datapacks" folder<br>
+          • If you are in the world already, type /reload in the chat to load the data pack
+        </div>
       </div>
       <div id="tools">
-        <h2>What tools can I use to create the files for my datapack?</h2>
-      </div>      
-      <div id="resources">
-        <h2>Resources</h2>
+        <label for="tools-description" class="faq-title" id="tools-title" onclick="toggleFaq(this)">
+          What tools can I use to create my data pack? <span class="dropdown-arrow">▼</span>
+        </label>
+        <div class="faq-description" id="tools-description">
+          • Download <a href="https://code.visualstudio.com/" target="_blank">VSCode</a><br>
+          • Go to the extensions and download "Datapack Helper Plus" by Spyglass<br>
+        </div>
       </div>
+      <div id="resources">
+        <label for="resources-description" class="faq-title" id="resources-title" onclick="toggleFaq(this)">
+          Resources <span class="dropdown-arrow">▼</span>
+        </label>
+        <div class="faq-description" id="resources-description">
+          • <a href="https://minecraft.wiki/w/Data_pack" target="_blank">Minecraft Wiki: Data pack</a><br>
+          • <a href="https://minecraft.wiki/w/Tutorial:Installing_a_data_pack" target="_blank">Minecraft Wiki: Installing a data pack</a>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
-    <p>&copy; 2025 Minecraft Datapack File Structure Generator</p>
+    <p>&copy; 2025 Minecraft Data Pack File Structure Generator</p>
     <p><a href="https://github.com/NinoBrun/minecraft-datapack-filestructure-generator.git" target="_blank">GitHub Repository</a></p>
   </footer>
 

@@ -1,5 +1,5 @@
 const fileStructureInfo = [
-  { title: "Enter datapack name", fileType: "folder",
+  { title: "Enter data pack name", fileType: "folder",
     fileLevel: 0, parentIndex: null,
     showItem: true, showCheckbox: false, showInfo: false, showInfoButton: false,
     info: "HIDDEN" },

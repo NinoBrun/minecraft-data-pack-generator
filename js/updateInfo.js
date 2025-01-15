@@ -55,14 +55,14 @@ function updateVersionCompatibilityText() {
   const compatibilityText = document.getElementById('compatibility-text');
   // Find version info for the selected version
   const versionInfo = versionData.find(v => v.value === selectedVersion);
-  compatibilityText.innerHTML = `➡️ Datapack version <b class="yellow-text">${selectedVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
+  compatibilityText.innerHTML = `➡️ Data pack version <b class="yellow-text">${selectedVersion}</b> is compatible with Minecraft version <b class="yellow-text">${versionInfo.compatibility}</b>`;
 }
 
 /**
  * Updates data pack name and namespace in the file structure.
  */
 function updateDataPackName() {
-  const dataPackName = getInputValue('datapack-name', "Enter datapack name");
+  const dataPackName = getInputValue('datapack-name', "Enter data pack name");
   const dataPackNamespace = getInputValue('datapack-name', "namespace");
 
   updateFileStructureItem(0, dataPackName, 'title');

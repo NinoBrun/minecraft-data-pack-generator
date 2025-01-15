@@ -18,7 +18,7 @@ function getPath(index) {
 }
 
 /**
- * Generates datapack zip file based on the file structure and user inputs.
+ * Generates data pack zip file based on the file structure and user inputs.
  */
 function generateDatapack() {
   const zip = new JSZip();
