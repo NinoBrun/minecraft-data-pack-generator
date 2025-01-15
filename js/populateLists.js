@@ -20,8 +20,7 @@ function createLabel(item, index) {
     label.appendChild(checkbox);
   }
   const icon = item.fileType === "folder" ? "📁 " : "📄 ";
-  label.appendChild(document.createTextNode(icon));
-  label.appendChild(document.createTextNode(` ${item.title} `));
+  label.appendChild(document.createTextNode(icon + ` ${item.title} `));
   if (item.showInfoButton) {
     const infoButton = document.createElement('button');
     infoButton.className = 'info-btn';

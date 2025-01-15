@@ -12,7 +12,7 @@ function addEventListeners() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    populateVersionSelect();
-    populateFileStructure();
-    addEventListeners();
+  populateVersionSelect();
+  populateFileStructure();
+  addEventListeners();
 });
