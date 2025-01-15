@@ -1,14 +1,5 @@
-function addEventListeners() {
-  const datapackNameInput = document.getElementById('datapack-name');
-  const datapackDescriptionInput = document.getElementById('datapack-description');
-  const versionSelect = document.getElementById('version-select');
-  
-  datapackNameInput.addEventListener('input', validateDataPackName);
-  datapackNameInput.addEventListener('input', updateDataPackName);
-  datapackDescriptionInput.addEventListener('input', validateDataPackDescription);
-  datapackDescriptionInput.addEventListener('input', updatePackMcmeta);
-  versionSelect.addEventListener('change', updatePackMcmeta);
-  versionSelect.addEventListener('change', updateVersionCompatibilityText);
+function getInputValue(elementId, defaultValue) {
+  return document.getElementById(elementId).value || defaultValue;
 }
 
 function updateVersionCompatibilityText() {
@@ -19,16 +10,16 @@ function updateVersionCompatibilityText() {
 }
 
 function updateDataPackName() {
-  const dataPackName = document.getElementById('datapack-name').value || "Enter datapack name";
-  const dataPackNamespace = document.getElementById('datapack-name').value || "namespace";
+  const dataPackName = getInputValue('datapack-name', "Enter datapack name");
+  const dataPackNamespace = getInputValue('datapack-name', "namespace");
   fileStructureInfo[0].title = dataPackName;
   fileStructureInfo[4].title = dataPackNamespace;
   populateFileStructure();
 }
 
 function updatePackMcmeta() {
-  const description = document.getElementById('datapack-description').value || "The default data for Minecraft";
-  const packFormat = document.getElementById('version-select').value || "61";
+  const description = getInputValue('datapack-description', "The default data for Minecraft");
+  const packFormat = getInputValue('version-select', "61");
   fileStructureInfo[1].info = `{ "pack": { "description": "${description}", "pack_format": ${packFormat} } }`;
   populateFileStructure();
 }
