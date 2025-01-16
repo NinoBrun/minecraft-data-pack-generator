@@ -1,66 +1,35 @@
-# Minecraft Data Pack Filestructure Generator
-
-This project helps generate the file structure for Minecraft data packs. It allows you to check and uncheck each item in the structure individually and generate a downloadable zip file of the selected structure.
+Generate the file structure for Minecraft data packs. Allows you to choose each item in the structure individually and generate a downloadable ZIP file.
 
 ## Project Structure
 
 ```
 minecraft-datapack-filestructure-generator
-├── index.html       # Main HTML document
-├── styles.css       # Styles for the webpage
+├── index.html
+├── styles.css
 └── js
-    ├── main.js               # JavaScript for interactivity
-    ├── fileStructure.js      # JavaScript for file structure generation
-    ├── listFiles.js          # JavaScript for file structure information
-    ├── listVersions.js       # JavaScript for version compatibility
-    ├── toggleInfo.js         # JavaScript for toggling info text
-    ├── listFilesObject.js    # JavaScript for file structure object
-    ├── listVersionsObject.js # JavaScript for version compatibility object
-    ├── populateLists.js      # JavaScript for populating lists
-    ├── validateInfo.js       # JavaScript for validating input fields
-    ├── updateInfo.js         # JavaScript for updating info fields
-    └── toggleFaq.js          # JavaScript for toggling FAQ sections
+    ├── main.js               # Event listeners to initialize the page
+    ├── fileStructure.js      # Creates the ZIP file based on user selections
+    ├── listFiles.js          # File structure information as objects in an array
+    ├── listVersions.js       # Version structure information as objects in an array
+    ├── toggleInfo.js         # Toggle info by hiding and displaying elements
+    ├── populateLists.js      # File structure and versions list generation
+    ├── validateInfo.js       # Checks for valid names
+    └── updateInfo.js         # Updates folder information in real-time based on pack naming
 ```
-
-## Getting Started
-
-To use the generator, follow these steps:
-
-1. Clone the repository or download the project files.
-2. Open the `index.html` file in your web browser.
-3. You should see the webpage with the Minecraft data pack folder structure.
-4. Check or uncheck the items you want in your data pack.
-5. Click the generate button to download the file structure as a zip file.
 
 ## Features
 
-- **Dynamic File Structure**: The file structure is dynamically generated based on the `fileStructureInfo` array in `listFilesObject.js`.
-- **Version Compatibility**: The version compatibility information is dynamically generated based on the `versionData` array in `listVersionsObject.js`.
-- **Info Toggle**: Each item in the file structure has an info button that toggles the display of additional information.
-- **Validation**: The data pack name input field only allows characters compatible with folder naming in Windows and disallows spaces. A warning blurb appears if invalid characters are entered.
+- **Downloadable Folder Structure**: The files you select are packaged into a ZIP and downloadable. This ZIP can be placed into a world's data pack folder directly.
+- **Written pack.png and pack.mcmeta files**: The pack.mcmeta file is completed upon download.
+- **Dynamic File Structure**: The file structure is dynamically generated based on the array in `listFiles.js`. Simply add a new object to expand the list. Each object has customability options to hide and display elements or behavior related to its checkbox and info button.
+- **Version Compatibility**: The version compatibility information is dynamically generated based on the array in `listVersions.js`. Simply add a new object to expand the list. The highest number index is labeled as "current".
+- **Info Toggle**: Each item in the file structure has an info button that toggles the display of additional information. Child folders are only shown if the parent folder is selected.
+- **Validation**: The data pack name input field only allows compatible characters. A warning blurb appears if invalid characters are entered.
 - **FAQ Sections**: Clickable FAQ sections that expand to show more information.
-
-## Customization
-
-### Styles
-
-Feel free to modify the `styles.css` file to change the appearance of the webpage.
-
-### JavaScript
-
-You can update the JavaScript files to add new features and interactivity. Here are some key files:
-
-- `listFilesObject.js`: Contains the file structure information. You can add or modify the items in the `fileStructureInfo` array.
-- `listVersionsObject.js`: Contains the version compatibility information. You can add or modify the items in the `versionData` array.
-- `toggleInfo.js`: Contains the function to toggle the display of the info text.
-- `main.js`: Initializes the page by populating the version select dropdown, updating the compatibility text, and generating the file structure HTML.
-- `populateLists.js`: Contains functions to populate the version select dropdown and file structure.
-- `validateInfo.js`: Contains functions to validate the input fields.
-- `updateInfo.js`: Contains functions to update the info fields.
 
 ## Dependencies
 
-This project uses the following libraries:
+This project uses the following libraries referenced in `index.html`:
 
 - [JSZip](https://stuk.github.io/jszip/) for generating zip files.
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for saving files on the client side.
