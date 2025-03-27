@@ -22,9 +22,9 @@ https://ninobrun.github.io/minecraft-data-pack-generator/
 
 ## VERSIONING RULES
 
-**X**.X.X - Major site update
-X.**X**.X - Version support for Minecraft game update
-X.X.**X** - Minor site update
+**X**.X.X - Major site update,
+X.**X**.X - Version support for Minecraft game update,
+X.X.**X** - Minor site update.
 
 A version number in any place will never decrease.
 For example: you cannot go from 1.1.2 to 1.2.2 or 1.1.3, but never back to 1.2.0. Version 1.1.10 comes after 1.1.9. Version 1.10.0 comes after 1.9.0.
