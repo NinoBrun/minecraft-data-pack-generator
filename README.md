@@ -7,6 +7,7 @@ Website: https://ninobrun.github.io/minecraft-data-pack-generator/
 1. Select all files toggle
 2. Open all info toggle
 3. Version histroy
+4. Different "Optional" design with a * system
 
 ---
 
