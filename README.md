@@ -1,19 +1,35 @@
-Website: https://ninobrun.github.io/minecraft-data-pack-generator/
-
----
-
-## TODO
-
-1. Select all files toggle
-2. Open all info toggle
-3. Version histroy
-4. Different "Optional" design with a * system
-
----
+## SUMMARY
 
 Generate the file structure for Minecraft data packs. Allows you to choose each item in the structure individually and generate a downloadable ZIP file.
 
-## Project Structure
+## WEBSITE
+
+https://ninobrun.github.io/minecraft-data-pack-generator/
+
+## TODO
+
+1. 1.1.3 - Select all files toggle
+2. 1.1.3 - Open all info toggle
+3. 1.1.4 - Version histroy and displayed version number (and Minecraft version number)
+4. 1.1.4 - Different "Optional" design with a * system
+
+## VERSIONS
+
+1. 1.0.0 - Launch
+2. 1.0.1 - FAQ
+3. 1.1.1 - 1.21.5 support
+4. 1.1.2 - Tags subfolder support + title and footer updates
+
+## VERSIONING RULES
+
+**X**.X.X - Major site update
+X.**X**.X - Version support for Minecraft game update
+X.X.**X** - Minor site update
+
+A version number in any place will never decrease.
+For example: you cannot go from 1.1.2 to 1.2.2 or 1.1.3, but never back to 1.2.0. Version 1.1.10 comes after 1.1.9. Version 1.10.0 comes after 1.9.0.
+
+## PROJECT STRUCTRE
 
 ```
 minecraft-datapack-filestructure-generator
@@ -30,7 +46,7 @@ minecraft-datapack-filestructure-generator
     └── updateInfo.js         # Updates folder information in real-time based on pack naming
 ```
 
-## Features
+## FEATURES
 
 - **Downloadable Folder Structure**: The files you select are packaged into a ZIP and downloadable. This ZIP can be placed into a world's data pack folder directly.
 - **Written pack.png and pack.mcmeta files**: The pack.mcmeta file is completed upon download.
@@ -40,14 +56,14 @@ minecraft-datapack-filestructure-generator
 - **Validation**: The data pack name input field only allows compatible characters. A warning blurb appears if invalid characters are entered.
 - **FAQ Sections**: Clickable FAQ sections that expand to show more information.
 
-## Dependencies
+## DEPENDENCIES
 
 This project uses the following libraries referenced in `index.html`:
 
 - [JSZip](https://stuk.github.io/jszip/) for generating zip files.
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for saving files on the client side.
 
-## Contributing
+## CONTRIBUTING
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. When contributing, please follow these guidelines:
 
