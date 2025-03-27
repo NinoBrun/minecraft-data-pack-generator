@@ -2,6 +2,13 @@ Website: https://ninobrun.github.io/minecraft-data-pack-generator/
 
 ---
 
+## TODO
+
+1. Select all files toggle
+2. Open all info toggle
+
+---
+
 Generate the file structure for Minecraft data packs. Allows you to choose each item in the structure individually and generate a downloadable ZIP file.
 
 ## Project Structure

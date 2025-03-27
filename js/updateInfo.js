@@ -62,11 +62,13 @@ function updateVersionCompatibilityText() {
  * Updates data pack name and namespace in the file structure.
  */
 function updateDataPackName() {
-  const dataPackName = getInputValue('datapack-name', "Enter data pack name");
-  const dataPackNamespace = getInputValue('datapack-name', "namespace");
+  const dataPackName = getInputValue('datapack-name', "<data pack name>");
+  const dataPackNamespace = getInputValue('datapack-name', "<namespace>");
+  const dataPackRegistryNamespace = getInputValue('datapack-name', "<registry name>")
 
   updateFileStructureItem(0, dataPackName, 'title');
   updateFileStructureItem(4, dataPackNamespace, 'title');
+  updateFileStructureItem(9, dataPackRegistryNamespace, 'title');
 }
 
 /**
