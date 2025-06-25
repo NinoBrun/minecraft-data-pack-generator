@@ -1,4 +1,6 @@
 const versionData = [
+  { value: "80",
+    compatibility: "1.21.6" },
   { value: "71",
     compatibility: "1.21.5" },
   { value: "61",

@@ -8,10 +8,10 @@ https://ninobrun.github.io/minecraft-data-pack-generator/
 
 ## TODO
 
-1. 1.1.3 - Select all files toggle
-2. 1.1.3 - Open all info toggle
-3. 1.1.4 - Version histroy and displayed version number (and Minecraft version number)
-4. 1.1.4 - Different "Optional" design with a * system
+1. 1.2.3 - Select all files toggle
+2. 1.2.3 - Open all info toggle
+3. 1.2.4 - Version histroy and displayed version number (and Minecraft version number)
+4. 1.2.4 - Different "Optional" design with a * system
 
 ## VERSIONS
 
@@ -19,6 +19,7 @@ https://ninobrun.github.io/minecraft-data-pack-generator/
 2. 1.0.1 - FAQ
 3. 1.1.1 - 1.21.5 support
 4. 1.1.2 - Tags subfolder support + title and footer updates
+5. 1.2.2 - 1.21.6 support
 
 ## VERSIONING RULES
 

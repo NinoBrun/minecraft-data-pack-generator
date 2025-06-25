@@ -75,8 +75,8 @@ function updateDataPackName() {
  * Updates the pack.mcmeta file content in the file structure.
  */
 function updatePackMcmeta() {
-  const description = getInputValue('datapack-description', "The default data for Minecraft");
-  const packFormat = getInputValue('version-select', "61");
+  const description = getInputValue('datapack-description', "dataPack.vanilla.description");
+  const packFormat = getInputValue('version-select', "80");
   
-  updateFileStructureItem(1, `{ "pack": { "description": "${description}", "pack_format": ${packFormat} } }`, 'info');
+  updateFileStructureItem(1, `{ "pack": { "description": { "translate": "${description}" }, "pack_format": ${packFormat} } }`, 'info');
 }
